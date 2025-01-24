@@ -1,12 +1,5 @@
 ---
-const {title, date, favori} = Astro.props
+const {...offre} = Astro.props;
 ---
 
-<div>
-    <ul>
-        <li> {title}</li>
-        <li> {date}</li>
-        <li> {favori}</li>
-        <button x-onclick="favori = !favori">Favori</button>
-    </ul>
-</div>
+<li>{offre.nomMaison}</li>
