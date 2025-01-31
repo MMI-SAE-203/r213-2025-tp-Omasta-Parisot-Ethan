@@ -1,7 +1,11 @@
 ---
 import Card from '../components/Card.astro';
 import Base from '../layouts/Base.astro';
+import { getOffres } from '../js/backend.mjs';
+const offres = await getOffres();
+console.log(offres);
 
+/*
 const offres = [
     {
         "adresse": "2821 Lake Sevilla, Palm Harbor, TX",
@@ -37,6 +41,7 @@ const offres = [
         "imgUrl": "image3.png"
     }
 ]
+*/
 ---
 
 <div>
