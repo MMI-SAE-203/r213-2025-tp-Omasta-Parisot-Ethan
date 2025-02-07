@@ -8,3 +8,5 @@ const {...offre} = Astro.props;
     <img src={offre.image_url} alt={"Image de ${offre.nomMaison}"} style="max-width: 100%; height: auto;" />
   )}
 </li>
+
+<a href={`/offres/${offre.id}`}>Voir plus</a>
