@@ -1,6 +1,7 @@
 ---
 import Card from '../../components/Card.astro';
 import Base from '../../layouts/Base.astro';
+import Add from '../../pages/offres/add.astro';
 import { getOffres } from '../../js/backend.mjs';
 const offres = await getOffres();
 console.log(offres);
@@ -66,3 +67,4 @@ const offres = [
         {offres.map((offre) => offre.favori && <Card {...offre} />)}
     </div>
 </div>
+<Add />
