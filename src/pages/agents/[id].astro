@@ -1,0 +1,7 @@
+---
+import { setFavori } from '../../js/backend.mjs';
+
+const { id } = Astro.params;
+const favori = await setFavori(id);
+
+---

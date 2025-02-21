@@ -10,3 +10,16 @@ const {...offre} = Astro.props;
 </li>
 
 <a href={`/offres/${offre.id}`}>Voir plus</a>
+
+<button 
+    @click="toggleFavorite()" 
+    class="favorite-button"
+    :class="{ 'active': isFavorite }">
+    <img :src="favorite.png" alt="Favori" />
+  </button>
+
+<script>
+    //@ts-nocheck
+    import { setFavori } from "@src/backend";
+    window.setFavori = setFavori;
+</script>
